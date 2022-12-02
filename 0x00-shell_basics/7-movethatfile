@@ -1,2 +1,3 @@
-#!/bin/bash
-mv /tmp/betty /tmp/my_first_directory
+[master 06b67a7] Move the file betty from /tmp/ to /tmp/my_first_directory
+ 1 file changed, 2 insertions(+)
+ create mode 100755 0x00-shell_basics/7-movethatfile
