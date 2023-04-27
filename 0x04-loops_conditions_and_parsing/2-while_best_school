@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+# A script that displayed 'Best School' ten times with 'while loop'
 # Set counter variable
 counter=1
 
