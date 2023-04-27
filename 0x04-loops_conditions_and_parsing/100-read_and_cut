@@ -1,18 +1,13 @@
 #!/usr/bin/env bash
 # A Bash script that displays the content of the file /etc/passwd.
 # Use IFS to set the field separator to ':'
-IFS=':'
 
 # Open the /etc/passwd file for reading
-exec 3< /etc/passwd
+myfile="/etc/passwd"
 
 # Read each line of the file and extract the desired fields
-while read -u 3 username x uid gid full_name home shell
+while IFS=read -r line
 do
-  echo "Username: $username"
-  echo "User ID: $uid"
-  echo "Home Directory: $home"
-done
-
+  echo "$line" | cut -d":" -f1,3,6
 # Close the file descriptor for /etc/passwd
-exec 3<&-
+done < "$myfile"
