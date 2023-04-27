@@ -7,11 +7,12 @@ hour=0
 
 while [ $hour -lt 13 ]
 do
-  minute=1
-  while [ $minute -lt 60 ]
-  do
-    printf "%02d:%02d\n" $hour $minute
-    minute=$((minute+1))
-  done
-  hour=$((hour+1))
+	echo "Hour: $hour"
+	minute=1
+	while [ $minute -lt 60 ]
+	do
+		echo "$minute"
+		((minute++))
+		done
+		((hour++))
 done
