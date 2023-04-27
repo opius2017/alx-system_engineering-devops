@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+# Bash script that displays numbers from 1 to 20 and:
+# displays 4 and then bad luck from China for the 4th loop iteration
+# displays 9 and then bad luck from Japan for the 9th loop iteration
+# displays 17 and then bad luck from Italy for the 17th loop iteration
+
+# Set counter variable
+counter=1
+
+# Loop while counter is less than or equal to 20
+while [ $counter -le 20 ]
+do
+  # Display the current number
+  echo $counter
+
+  # Check if the counter is 4, 9, or 17
+  case $counter in
+    4)
+      echo "bad luck from China"
+      ;;
+    9)
+      echo "bad luck from Japan"
+      ;;
+    17)
+      echo "bad luck from Italy"
+      ;;
+  esac
+
+  # Increment counter by 1
+  ((counter++))
+done
