@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # This script displays lines containing the bash word, 
 # to get the PID of the current Bash process.
-ps aux | grep bash | grep -v grep | awk '{ print $2 }'
+ps auxf | grep bash
