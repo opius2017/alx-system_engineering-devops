@@ -2,4 +2,4 @@
 # This script stops the 4-to_infinity_and_beyond script.
 
 # Find kill the 4-to_infinity_and_beyond process
-Kill "$(pgrep -f 4-to_infinity_and_beyond)"
+kill "$(pgrep -f 4-to_infinity_and_beyond)"
