@@ -6,8 +6,7 @@
 myfile="/etc/passwd"
 
 # Read each line of the file and extract the desired fields
-while IFS=read -r line
+while IFS= read -r line
 do
-  echo "$line" | cut -d":" -f1,3,6
-# Close the file descriptor for /etc/passwd
+    echo "$line" | cut -d":" -f1,3,6
 done < "$myfile"
