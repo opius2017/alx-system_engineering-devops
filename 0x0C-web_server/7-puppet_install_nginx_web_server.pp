@@ -15,7 +15,7 @@ exec {'Hello':
   provider => shell,
 }
 
-exec {'sudo sed -i "s/listen 80 default_server;/listen 80 default_server;\\n\\tlocation \/redirect_me {\\n\\t\\treturn 301 https:\/\/alx.trensotek.com\/;\\n\\t}/" /etc/nginx/sites-available/default':
+exec {'sudo sed -i "s/listen 80 default_server;/listen 80 default_server;\\n\\tlocation \/redirect_me {\\n\\t\\treturn 301 https:\/\/web-01.pisowlab.tech\/;\\n\\t}/" /etc/nginx/sites-available/default':
   provider => shell,
 }
 
