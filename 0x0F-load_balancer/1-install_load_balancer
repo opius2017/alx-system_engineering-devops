@@ -16,8 +16,8 @@ frontend  opius2007-frontend
         default_backend opius2007-backend
 backend opius2007-backend
         balance roundrobin
-        server 211092-web-01 54.224.23.196:80 check
-        server 211092-web-02 54.166.137.26:80 check
+        server 211092-web-01 54.197.131.195:80 check
+        server 211092-web-02 18.207.236.10:80 check
 "
 echo "$server_config" | sudo tee -a /etc/haproxy/haproxy.cfg
 
