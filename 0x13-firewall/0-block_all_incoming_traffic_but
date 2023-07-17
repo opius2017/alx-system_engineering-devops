@@ -3,7 +3,7 @@
 sudo ufw status
 
 # If ufw is not active, you can enable it by running:
-suo ufw enable
+sudo ufw enable
 
 # Set the default incoming policy to "deny" to block all incoming traffic by running:
 sudo ufw default deny incomming
