@@ -6,7 +6,7 @@ sudo ufw status
 sudo ufw enable
 
 # Set the default incoming policy to "deny" to block all incoming traffic by running:
-sudo ufw default deny incomming
+sudo ufw default deny incoming
 
 # Set the default outgoing policy to "allow" to allow  all outgoing traffic by running:
 sudo ufw default allow outgoing
